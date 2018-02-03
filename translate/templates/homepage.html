@@ -1,25 +1,36 @@
-<h1>Google Cloud Platform - Translate Sample</h1>
-
-<p>This Python Flask application demonstrates App Engine Flexible and the Translate API</p>
-
-<br>
-
+<!-- The boring stuff -->
+<!DOCTYPE html>
 <html>
-  <body>
-    <form action="run_translate" method="POST" enctype="multipart/form-data">
-      Translate: <input type="text" name="text"><br>
-      <input type="submit" name="submit" value="Submit">
-    </form>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="DESCRIBE YOUR WEBSITE">
+	<meta name="keywords" content="KEY, WORDS, HERE">
+	<link href="menu.css" rel="stylesheet">
+	</head>
+	<body>
+<h1> 		
+<ul1> 
+  <li1><a href="WelcomePage.html">Home</a></li>
+  <li1><a href="AboutUs.html">About Us</a></li>
+  <li1><a href="LogIn.html">Log In Hours</a></li>
+  <li1><a href="VolunteerOpportunities.html">Volunteer Opportunities</a></li>
+</ul1></h1>
+		
+<p>
+     <h3>Mission Statement</h3>
+	<ul2 class="menu">
+		<li>To provide a platform for High School students to connect with independent non-profit organizations and engage with their community through volunteering.</li>	
+		<li>Students are able to log their volunteer hours and keep an organized list that will assit them in the future when they will have to apply to collges.</li>
+ 		<li>To allow non-profit organizations to broaden their network of volunteers and make a bigger impact on the world.</li>
+ 		<li>To connect students with teachers, administrators and helpful informations that will assist throughout the collge aplication process.</li>
+	</ul2>
+		<img src="https://gt20.org/wp-content/uploads/2016/09/volunteer.png">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</p>
+	
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
 
-    {% if confidence %}
-      <h2>Language Detection:</h2>
-        <p><b>Confidence:</b> {{ confidence }}</p>
-        <p><b>Input Text:</b> {{ input_text|safe }}</p>
-        <p><b>Language:</b> {{ language }}</p>
-      <br>
-      <h2>Translated Text:</h2>
-        <p><b>French Translation:</b> {{ translated_text_french|safe }} </p>
-        <p><b>Chinese Translation:</b> {{ translated_text_chinese|safe }} </p>
-    {% endif %}
-  </body>
-</html> 
+			
+</html>
