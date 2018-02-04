@@ -9,7 +9,7 @@ line= "To provide a platform for High School students to connect with independen
 @app.route('/')
 def homepage():
     # Return a Jinja2 HTML template and pass in image_entities as a parameter.
-    return render_template('homepage.html', line=line)
+    return render_template('homepage.html', line=line, apple=apple, pear=pear, grape=grape)
 
 
 @app.route('/run_translate', methods=['GET', 'POST'])
