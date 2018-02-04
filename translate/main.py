@@ -4,11 +4,13 @@ from google.cloud import translate
 
 app = Flask(__name__)
 
+line= "To provide a platform for High School students to connect with independent non-profit organizations and engage with their community through volunteering"
 
 @app.route('/')
 def homepage():
     # Return a Jinja2 HTML template and pass in image_entities as a parameter.
-    return render_template('homepage.html')
+    return render_template('homepage.html', line=line)
+
 
 @app.route('/run_translate', methods=['GET', 'POST'])
 def run_translate():
