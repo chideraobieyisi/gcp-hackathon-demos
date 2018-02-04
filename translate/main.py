@@ -5,6 +5,9 @@ from google.cloud import translate
 app = Flask(__name__)
 
 line= "To provide a platform for High School students to connect with independent non-profit organizations and engage with their community through volunteering"
+apple= "Students are able to log their volunteer hours and keep an organized list that will assit them in the future when they will have to apply to collges"
+pear= "To allow non-profit organizations to broaden their network of volunteers and make a bigger impact on the world."
+grape= "To connect students with teachers, administrators and helpful informations that will assist throughout the collge aplication process."
 
 @app.route('/')
 def homepage():
